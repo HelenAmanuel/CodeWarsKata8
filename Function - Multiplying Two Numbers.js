@@ -1,0 +1,2 @@
+// Write here your multiply-function
+let multiply = (a, b) => a * b;
