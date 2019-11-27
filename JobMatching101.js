@@ -1,4 +1,4 @@
-function match({minSalary}, {maxSalary}) {
-if (!minSalary || !maxSalary) throw new Error('')
-return minSalary*0.9<=maxSalary
+function match(candidate, job) {
+  if (!candidate.minSalary || !job.maxSalary) throw "Invalid Job or Candidate";
+  return job.maxSalary >= candidate.minSalary * 0.9;
 }
